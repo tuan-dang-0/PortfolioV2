@@ -18,7 +18,7 @@ export default function Header() {
             <Button text="Projects" />
           </div>
         </div>
-        <div className="w-[50%]grow h-full">
+        <div className="h-full w-[50%] grow">
           <Logo />
         </div>
       </div>
