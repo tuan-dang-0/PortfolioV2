@@ -1,8 +1,12 @@
+import NavBar from './components/NavBar';
+import Header from './components/header/Header';
+
 function App() {
   return (
-    <>
-      <div className="bg-primary">Test</div>
-    </>
+    <div className="mx-auto w-full bg-primary">
+      <NavBar />
+      <Header />
+    </div>
   );
 }
 
