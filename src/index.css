@@ -10,16 +10,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* 
+Mouse scroll animation  
+https://unused-css.com/blog/animated-down-arrow/
+*/
 #mouse-scroll {
-  style: block;
+  display: block;
 }
 #mouse-scroll {
-  position: fixed;
+  position: relative;
   margin: auto;
-  left: 50%;
-  top: 92%;
-  -webkit-transform: translateX(-50%);
-  z-index: 9999;
+  bottom: 5%;
+  z-index: 10;
+  transform: translateX(-50%);
 }
 #mouse-scroll span {
   display: block;
@@ -65,7 +68,7 @@
 }
 #mouse-scroll .mouse-in {
   -webkit-animation: animated-mouse 1.2s ease infinite;
-  moz-animation: mouse-animated 1.2s ease infinite;
+  -moz-animation: mouse-animated 1.2s ease infinite;
 }
 
 @-webkit-keyframes animated-mouse {
@@ -77,9 +80,9 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
+    -webkit-transform: translateY(12px);
+    -ms-transform: translateY(12px);
+    transform: translateY(12px);
   }
 }
 @-webkit-keyframes mouse-scroll {
@@ -103,4 +106,47 @@
   100% {
     opacity: 1;
   }
+}
+
+/* 
+
+*/
+
+.nav-link {
+  background-image: linear-gradient(to left, #ddd, #ddd 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  position: relative;
+  display: inline;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-link::before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-position: 0;
+  cursor: pointer;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  z-index: 20;
+  cursor: pointer;
 }

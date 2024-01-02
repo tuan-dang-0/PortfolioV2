@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Scroll() {
   return (
-    <div>
+    <div className="absolute bottom-5 left-1/2">
       <a href="#">
         <div id="mouse-scroll">
           <div className="mouse">

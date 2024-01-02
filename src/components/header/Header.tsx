@@ -5,7 +5,7 @@ import Scroll from './Scroll';
 
 export default function Header() {
   return (
-    <div className=" h-screen bg-primary bg-[linear-gradient(137deg,_rgba(0,0,0,.7)_0%,_rgba(24,41,76,.7)_56%,_rgba(40,101,138,.7)_100%)] pt-24 text-white">
+    <div className=" relative h-screen bg-primary bg-[linear-gradient(137deg,_rgba(0,0,0,.7)_0%,_rgba(24,41,76,.7)_56%,_rgba(40,101,138,.7)_100%)] pb-10 pt-24 text-white">
       <div className="mx-auto flex h-full max-w-[96rem] grow items-center justify-around">
         <div className=" w-[50%] text-nowrap px-36">
           <div className="mb-8">
