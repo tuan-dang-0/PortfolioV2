@@ -16,13 +16,13 @@ export default function HeadShot() {
   return (
     <>
       <div
-        className="relative z-20 flex overflow-hidden"
+        className="relative z-20 overflow-hidden"
         style={{ width: `${width}rem` }}
       >
-        <div className="relative flex">
+        <div className="relative">
           <div>
             <img
-              className="absolute object-contain transition-all duration-500"
+              className="absolute rounded-md border-2 object-contain transition-all duration-500"
               src={headshot}
               style={{
                 height: `${height}rem`,
@@ -31,7 +31,7 @@ export default function HeadShot() {
               }}
             />
             <img
-              className="absolute object-contain transition-all duration-500"
+              className="absolute rounded-md border-2 object-contain transition-all duration-500"
               src={cooking}
               style={{
                 height: `${height}rem`,

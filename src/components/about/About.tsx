@@ -12,7 +12,7 @@ export default function About() {
   return (
     <MouseParallaxContainer
       containerStyle={{
-        height: '100vh',
+        height: '90vh',
         width: '100%',
         position: 'relative',
         display: 'block',
@@ -24,7 +24,7 @@ export default function About() {
           About Me
         </h2>
         <MouseParallaxChild
-          style={{ left: '5rem', top: '-5rem', position: 'relative' }}
+          style={{ left: '5%', top: '-11%', position: 'relative' }}
           factorX={0.02}
           factorY={0.02}
         >
@@ -35,7 +35,7 @@ export default function About() {
         </MouseParallaxChild>
 
         <MouseParallaxChild
-          style={{ left: '90%', top: '-5rem', position: 'relative' }}
+          style={{ left: '90%', top: '-11%', position: 'relative' }}
           factorX={-0.04}
           factorY={-0.04}
         >
