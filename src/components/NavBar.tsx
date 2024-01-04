@@ -2,7 +2,7 @@ import logo from '../assets/logo.png';
 
 export default function NavBar() {
   return (
-    <div className="group fixed z-50 flex h-24 w-full flex-wrap content-center justify-between bg-primary px-48 font-bold text-white shadow-xl">
+    <div className="group fixed z-50 flex h-24 w-full flex-wrap content-center justify-between bg-primary px-48 font-bold text-white shadow-2xl">
       <img src={logo} className="h-16" />
       <ul className="flex items-center gap-10 text-lg">
         <li className="nav-link uppercase">

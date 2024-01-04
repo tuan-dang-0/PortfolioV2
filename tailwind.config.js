@@ -18,7 +18,13 @@ export default {
         100: '#747f94',
       },
       secondary: {
+        800: '#1f6d8e',
+        700: '#247da2',
+        600: '#298cb7',
         DEFAULT: '#2D9CCB',
+        400: '#42a6d0',
+        300: '#57b0d5',
+        200: '#6cbadb',
       },
       tertiary: {
         DEFAULT: '#28658A',
@@ -27,6 +33,7 @@ export default {
       red: colors.red,
       white: colors.white,
       gray: colors.gray,
+      transparent: colors.transparent,
     },
     extend: {
       fontFamily: {

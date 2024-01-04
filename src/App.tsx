@@ -7,6 +7,7 @@ function App() {
       <NavBar />
       <Header />
       <About />
+      <div className="h-96 w-screen bg-black">""</div>
     </div>
   );
 }
