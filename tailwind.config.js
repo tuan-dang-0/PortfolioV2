@@ -16,6 +16,7 @@ export default {
         300: '#465470',
         200: '#5d6982',
         100: '#747f94',
+        '800T': 'rgba(17, 29, 53, 0.5)',
       },
       secondary: {
         800: '#1f6d8e',
@@ -25,19 +26,28 @@ export default {
         400: '#42a6d0',
         300: '#57b0d5',
         200: '#6cbadb',
+        T: 'rgba(45, 156, 203, 0.8)',
       },
       tertiary: {
         DEFAULT: '#28658A',
+      },
+      accent: {
+        DEFAULT: '#FFD700',
+        light: '#ffeb80',
       },
       black: colors.black,
       red: colors.red,
       white: colors.white,
       gray: colors.gray,
       transparent: colors.transparent,
+      'black-rgba': 'rgba(0, 0, 0, 0.6)',
     },
     extend: {
       fontFamily: {
         roboto: ['Roboto Slab', 'serif'],
+      },
+      gridTemplateColumns: {
+        project: '50fr 50fr',
       },
     },
   },

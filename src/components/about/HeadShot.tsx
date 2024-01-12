@@ -42,7 +42,7 @@ export default function HeadShot() {
           </div>
         </div>
         <button
-          className="bg-transparent hover:text-secondary-200 absolute top-1/2 z-30 flex h-8 w-8 -translate-y-full items-center justify-center rounded-full transition-colors duration-300"
+          className="absolute top-1/2 z-30 flex h-8 w-8 -translate-y-full items-center justify-center rounded-full bg-transparent transition-colors duration-300 hover:text-secondary-200"
           onClick={() => changeTranslate('left')}
         >
           <svg
@@ -53,15 +53,15 @@ export default function HeadShot() {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M15 19l-7-7 7-7"
             />
           </svg>
         </button>
         <button
-          className="hover:text-secondary-200 absolute right-0 top-1/2 flex h-10 w-10  -translate-y-full items-center justify-center rounded-full duration-300"
+          className="absolute right-0 top-1/2 flex h-10 w-10 -translate-y-full  items-center justify-center rounded-full duration-300 hover:text-secondary-200"
           onClick={() => changeTranslate('right')}
         >
           <svg
@@ -72,16 +72,16 @@ export default function HeadShot() {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M9 5l7 7-7 7"
             />
           </svg>
         </button>
       </div>
       <div
-        className="bg-tertiary absolute block -translate-x-5 translate-y-5"
+        className="absolute block -translate-x-5 translate-y-5 bg-tertiary"
         style={{ height: `${height}rem`, width: `${width}rem` }}
       />
     </>

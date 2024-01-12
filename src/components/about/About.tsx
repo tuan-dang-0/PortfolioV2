@@ -3,6 +3,7 @@ import lion from '../../assets/lion.png';
 import dumbbell from '../../assets/dumbbell.png';
 import pot from '../../assets/pot.png';
 import HeadShot from '../../components/about/HeadShot';
+import SectionHead from '../../components/ui/SectionHead';
 import {
   MouseParallaxContainer,
   MouseParallaxChild,
@@ -20,9 +21,7 @@ export default function About() {
       resetOnLeave
     >
       <div className="relative h-full items-start bg-primary text-white">
-        <h2 className="mx-auto mb-24 flex items-center justify-center overflow-hidden pt-16 text-center text-2xl font-semibold before:mr-20 before:block before:h-[0.1rem] before:w-80 before:bg-white after:ml-20 after:block after:h-[0.1rem] after:w-80 after:bg-white">
-          About Me
-        </h2>
+        <SectionHead text="About Me" />
         <MouseParallaxChild
           style={{ left: '5%', top: '-11%', position: 'relative' }}
           factorX={0.02}
@@ -95,13 +94,15 @@ export default function About() {
           </div>
           <div className="relative ml-24 mr-36 flex w-[50%]">
             <div>
-              <p className="bg-tertiary rounded-md px-5 py-6 text-xl font-medium leading-relaxed shadow-lg">
+              <p className="bg-tertiary rounded-md px-5 py-6 text-xl font-medium leading-relaxed text-gray-50 shadow-lg">
                 Hey! My name is Tuan and I enjoy writing code to solve
                 real-world problems. As a{' '}
-                <span className="text-secondary">full-stack</span> developer, I
-                have a passion for learning new tech with current interests in
-                both <span className="text-secondary">Web</span> and{' '}
-                <span className="text-secondary">Cloud</span> development.
+                <span className="text-accent font-bold">full-stack</span>{' '}
+                developer, I have a passion for learning new tech with current
+                interests in both{' '}
+                <span className="text-accent font-bold">Web</span> and{' '}
+                <span className="text-accent font-bold">Cloud</span>{' '}
+                development.
                 <br />
                 <br />
                 Outside of tech, I enjoy cooking, weightlifting, and traditional
