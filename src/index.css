@@ -9,6 +9,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --primary: #18294c;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 /* 
@@ -109,10 +115,6 @@ https://unused-css.com/blog/animated-down-arrow/
   }
 }
 
-/* 
-
-*/
-
 .nav-link {
   background-image: linear-gradient(to left, #ddd, #ddd 50%, #fff 50%);
   background-size: 200% 100%;
@@ -129,7 +131,7 @@ https://unused-css.com/blog/animated-down-arrow/
 
 .nav-link::before {
   content: '';
-  background: #54b3d6;
+  background: #ffeb80;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -150,4 +152,30 @@ https://unused-css.com/blog/animated-down-arrow/
   width: 100%;
   z-index: 20;
   cursor: pointer;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #57b0d5;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.slideUp {
+  transform: translateY(-100%);
+  transition-duration: 1000ms;
 }

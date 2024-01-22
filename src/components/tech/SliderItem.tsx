@@ -1,9 +1,13 @@
-import React from 'react';
-
 interface Props {
-  children: JSX.Element[];
+  icon: JSX.Element;
+  text: string;
 }
 
-export function SliderItem({ children }: Props) {
-  return <div className="flex flex-col justify-center">{children}</div>;
+export function SliderItem({ icon, text }: Props) {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      {icon}
+      <p>{text}</p>
+    </div>
+  );
 }

@@ -4,7 +4,11 @@ import colors from 'tailwindcss/colors';
 
 export default {
   important: true,
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    'node_modules/flowbite-react/lib/esm/**/*.js',
+  ],
   theme: {
     colors: {
       primary: {
@@ -40,7 +44,7 @@ export default {
       white: colors.white,
       gray: colors.gray,
       transparent: colors.transparent,
-      'black-rgba': 'rgba(0, 0, 0, 0.6)',
+      'black-rgba': 'rgba(0, 0, 0, 0.8)',
     },
     extend: {
       fontFamily: {
@@ -51,5 +55,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };
