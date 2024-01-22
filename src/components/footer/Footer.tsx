@@ -1,5 +1,4 @@
 import { Dispatch, SetStateAction } from 'react';
-import logo from '../../assets/logo.png';
 
 export default function Footer({
   setClose,

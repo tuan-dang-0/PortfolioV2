@@ -7,7 +7,6 @@ import {
   SetStateAction,
 } from 'react';
 import { IoClose, IoMenu } from 'react-icons/io5';
-import logo from '../assets/logo.svg';
 import debounce from 'lodash.debounce';
 
 interface RefsType {
